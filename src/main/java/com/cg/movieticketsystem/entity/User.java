@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "movie_user")
 public class User {
 
     @Id
@@ -33,13 +34,11 @@ public class User {
     public User() {
     }
 
-    public User(Long userId, String username, String email, String password, String contact, Set<Role> roles) {
-        this.userId = userId;
+    public User(String username, String email, String password, String contact) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.contact = contact;
-        this.roles = roles;
     }
 
     public Long getUserId() {

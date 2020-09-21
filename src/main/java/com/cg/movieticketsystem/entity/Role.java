@@ -2,11 +2,11 @@ package com.cg.movieticketsystem.entity;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "role")
 public class Role {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Enumerated(EnumType.STRING)
@@ -16,8 +16,7 @@ public class Role {
     public Role() {
     }
 
-    public Role(long id, RoleType name) {
-        this.id = id;
+    public Role(RoleType name) {
         this.name = name;
     }
 
