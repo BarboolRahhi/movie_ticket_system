@@ -1,6 +1,7 @@
 package com.cg.movieticketsystem.controller;
 
 import com.cg.movieticketsystem.Service.AuthService;
+import com.cg.movieticketsystem.TestUtil;
 import com.cg.movieticketsystem.dto.request.SignupRequest;
 import com.cg.movieticketsystem.dto.response.MessageResponse;
 import com.cg.movieticketsystem.util.Constants;
@@ -52,7 +53,7 @@ public class AuthControllerTests {
 
         mockMvc.perform(MockMvcRequestBuilders
                 .post("/api/auth/signup")
-                .content(asJsonString(payload))
+                .content(TestUtil.asJsonString(payload))
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
@@ -62,11 +63,4 @@ public class AuthControllerTests {
                 );
     }
 
-    public static String asJsonString(final Object obj) {
-        try {
-            return new ObjectMapper().writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

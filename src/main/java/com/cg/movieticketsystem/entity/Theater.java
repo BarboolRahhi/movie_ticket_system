@@ -1,6 +1,7 @@
 package com.cg.movieticketsystem.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Theater {
@@ -24,6 +25,14 @@ public class Theater {
 
     public Theater() {
 
+    }
+
+    public Theater(Long theaterId, String theaterName, String theaterCity, String managerName, String managerContact) {
+        this.theaterId = theaterId;
+        this.theaterName = theaterName;
+        this.theaterCity = theaterCity;
+        this.managerName = managerName;
+        this.managerContact = managerContact;
     }
 
     public Theater(String theaterName, String theaterCity, String managerName, String managerContact) {
@@ -71,6 +80,19 @@ public class Theater {
 
     public void setManagerContact(String managerContact) {
         this.managerContact = managerContact;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Theater)) return false;
+        Theater theater = (Theater) o;
+        return getTheaterId().equals(theater.getTheaterId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getTheaterId());
     }
 
     @Override

@@ -4,21 +4,24 @@ import com.cg.movieticketsystem.entity.Theater;
 import com.cg.movieticketsystem.exception.NotFoundException;
 import com.cg.movieticketsystem.repository.TheaterRepository;
 import com.cg.movieticketsystem.util.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-
 @Service
 @Transactional
-public class AdminTheaterServiceImpl implements BaseAdminService<Theater, Long> {
+public class AdminTheaterServiceImpl implements AdminTheaterService {
+
+    private static final Logger logger = LoggerFactory.getLogger(AdminTheaterServiceImpl.class);
 
     @Autowired
     private TheaterRepository theaterRepository;
 
     @Override
     public Theater addItem(Theater model) {
+        logger.info("Adding Theater...");
         return theaterRepository.save(model);
     }
 
@@ -31,6 +34,8 @@ public class AdminTheaterServiceImpl implements BaseAdminService<Theater, Long> 
         theater.setTheaterCity(model.getTheaterCity());
         theater.setManagerName(model.getManagerName());
         theater.setManagerContact(model.getManagerContact());
+
+        logger.info("Updating Theater... with Id: {}", id);
         return theaterRepository.save(theater);
     }
 
@@ -38,6 +43,7 @@ public class AdminTheaterServiceImpl implements BaseAdminService<Theater, Long> 
     public void deleteItem(Long id) throws NotFoundException {
         theaterRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException(Constants.NOT_FOUND));
+        logger.info("Deleting Theater... with ID: {}", id);
         theaterRepository.deleteById(id);
     }
 

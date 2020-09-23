@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class AdminShowServiceImpl implements BaseAdminService<Show, Long> {
+public class AdminShowServiceImpl implements AdminShowService {
 
     @Override
     public Show addItem(Show model) {

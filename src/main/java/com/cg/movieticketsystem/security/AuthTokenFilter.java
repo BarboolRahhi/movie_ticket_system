@@ -58,7 +58,6 @@ public class AuthTokenFilter extends OncePerRequestFilter {
         if (StringUtils.hasText(header) && header.startsWith(AUTH_TYPE)) {
             return header.substring(START_TOKEN_INDEX);
         }
-
         return null;
     }
 

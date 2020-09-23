@@ -3,7 +3,10 @@ package com.cg.movieticketsystem.entity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -35,7 +38,8 @@ public class Movie {
     private LocalDate movieReleaseDate;
 
     @ManyToOne
-    @JoinColumn(name = "theater_id", nullable = false)
+    @JoinColumn(name = "theater_id")
+    @NotNull(message = "Theater must not be Blank")
     private Theater theater;
 
     public Movie() {
@@ -104,6 +108,19 @@ public class Movie {
 
     public void setTheater(Theater theater) {
         this.theater = theater;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Movie)) return false;
+        Movie movie = (Movie) o;
+        return getMovieId().equals(movie.getMovieId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getMovieId());
     }
 
     @Override

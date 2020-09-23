@@ -2,8 +2,11 @@ package com.cg.movieticketsystem.controller.admin;
 
 import com.cg.movieticketsystem.dto.response.MessageResponse;
 import com.cg.movieticketsystem.exception.NotFoundException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 /**
  * @param <T> it represent Entity class or model
@@ -13,13 +16,13 @@ public interface BaseAdminController<T, V> {
 
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping
-    T addItem(@RequestBody T model);
+    ResponseEntity<?> addItem(@Valid @RequestBody T model);
 
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/{id}")
-    T updateItem(@PathVariable("id") V id, @RequestBody T model) throws NotFoundException;
+    ResponseEntity<?> updateItem(@PathVariable("id") V id, @Valid @RequestBody T model) throws NotFoundException;
 
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/{id}")
-    MessageResponse deleteItem(@PathVariable("id") V id) throws NotFoundException;
+    ResponseEntity<?> deleteItem(@PathVariable("id") V id) throws NotFoundException;
 }

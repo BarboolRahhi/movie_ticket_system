@@ -4,8 +4,10 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Screen {
@@ -27,9 +29,9 @@ public class Screen {
     @OneToMany(mappedBy = "screen", cascade = CascadeType.ALL)
     private List<Show> showList =new ArrayList<>();
 
-    @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "theater_id", nullable = false)
+    @JoinColumn(name = "theater_id")
+    @NotNull(message = "Theater must not be Blank")
     private Theater theater;
 
     public Screen() {
@@ -89,5 +91,30 @@ public class Screen {
 
     public void setTheater(Theater theater) {
         this.theater = theater;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Screen)) return false;
+        Screen screen = (Screen) o;
+        return getScreenId().equals(screen.getScreenId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getScreenId());
+    }
+
+    @Override
+    public String toString() {
+        return "Screen{" +
+                "screenId=" + screenId +
+                ", screenName='" + screenName + '\'' +
+                ", rows=" + rows +
+                ", columns=" + columns +
+                ", showList=" + showList +
+                ", theater=" + theater +
+                '}';
     }
 }
