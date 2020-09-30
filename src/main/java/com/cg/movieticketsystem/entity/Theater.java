@@ -1,6 +1,13 @@
 package com.cg.movieticketsystem.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -21,13 +28,17 @@ public class Theater {
     private String managerName;
 
     @Column(name = "manager_contact")
+    @Pattern(regexp = "[0-9]+", message = "Contact must contains only numbers")
+    @Size(min = 10, max = 10, message = "Contact must contain 10 digit only")
     private String managerContact;
+   
 
     public Theater() {
 
     }
+    
 
-    public Theater(Long theaterId, String theaterName, String theaterCity, String managerName, String managerContact) {
+	public Theater(Long theaterId, String theaterName, String theaterCity, String managerName, String managerContact) {
         this.theaterId = theaterId;
         this.theaterName = theaterName;
         this.theaterCity = theaterCity;
@@ -81,8 +92,8 @@ public class Theater {
     public void setManagerContact(String managerContact) {
         this.managerContact = managerContact;
     }
-
-    @Override
+    
+	@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Theater)) return false;

@@ -1,8 +1,9 @@
 package com.cg.movieticketsystem.controller;
 
-import com.cg.movieticketsystem.Service.AuthService;
 import com.cg.movieticketsystem.dto.request.LoginRequest;
 import com.cg.movieticketsystem.dto.request.SignupRequest;
+import com.cg.movieticketsystem.Service.AuthService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

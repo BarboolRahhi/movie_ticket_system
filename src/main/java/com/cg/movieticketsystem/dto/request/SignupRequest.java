@@ -16,6 +16,10 @@ public class SignupRequest {
 
     @NotBlank(message = "Contact Must not be empty")
     private String contact;
+    
+    public SignupRequest() {
+	
+	}
 
     public SignupRequest(String username, String email, String password, String contact) {
         this.username = username;

@@ -1,0 +1,7 @@
+browser = chrome
+
+
+url = http://localhost:4200/
+
+username = rahhi@gmail.com
+password = rahhi123

@@ -1,21 +1,29 @@
 package com.cg.movieticketsystem.service;
 
-import com.cg.movieticketsystem.Service.admin.AdminTheaterServiceImpl;
-import com.cg.movieticketsystem.entity.Theater;
-import com.cg.movieticketsystem.exception.NotFoundException;
-import com.cg.movieticketsystem.repository.TheaterRepository;
-import com.cg.movieticketsystem.util.Constants;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.Optional;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import com.cg.movieticketsystem.Service.admin.AdminTheaterService;
+import com.cg.movieticketsystem.Service.admin.AdminTheaterServiceImpl;
+import com.cg.movieticketsystem.entity.Theater;
+import com.cg.movieticketsystem.exception.NotFoundException;
+import com.cg.movieticketsystem.repository.TheaterRepository;
+import com.cg.movieticketsystem.util.Constants;
 
 @SpringBootTest
 public class AdminTheaterServiceTests {
@@ -25,7 +33,7 @@ public class AdminTheaterServiceTests {
 
     @InjectMocks
     private AdminTheaterServiceImpl theaterService;
-
+    
     @Test
     void add_test() {
         Theater theater = new Theater(
@@ -45,6 +53,22 @@ public class AdminTheaterServiceTests {
 
         assertEquals(theaterService.addItem(theater).getTheaterId(), 12L);
     }
+    
+    
+    @Test
+    void get_by_id_test() {
+    	Theater returnValue = new Theater(
+                10L,
+                "Viva",
+                "jalandhar",
+                "Vikaram Pal",
+                "9632146463"
+        );
+        when(theaterRepository.findById(10L)).thenReturn(Optional.of(returnValue));
+       
+        assertEquals(theaterService.getItem(10L).getTheaterName(), returnValue.getTheaterName());
+        verify(theaterRepository, times(1)).findById(any());
+    }
 
     @Test
     void update_exception_test() {
@@ -63,4 +87,7 @@ public class AdminTheaterServiceTests {
         theaterService.deleteItem(anyLong());
         verify(theaterRepository, times(1)).deleteById(anyLong());
     }
+    
+    
+    
 }

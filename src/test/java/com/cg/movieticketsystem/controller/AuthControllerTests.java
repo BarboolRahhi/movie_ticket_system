@@ -1,9 +1,9 @@
 package com.cg.movieticketsystem.controller;
 
-import com.cg.movieticketsystem.Service.AuthService;
 import com.cg.movieticketsystem.TestUtil;
 import com.cg.movieticketsystem.dto.request.SignupRequest;
 import com.cg.movieticketsystem.dto.response.MessageResponse;
+import com.cg.movieticketsystem.Service.AuthService;
 import com.cg.movieticketsystem.util.Constants;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.beans.binding.When;

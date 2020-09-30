@@ -1,13 +1,16 @@
 package com.cg.movieticketsystem.controller;
 
-import com.cg.movieticketsystem.Service.AuthService;
-import com.cg.movieticketsystem.Service.admin.AdminTheaterServiceImpl;
-import com.cg.movieticketsystem.TestUtil;
-import com.cg.movieticketsystem.dto.response.MessageResponse;
-import com.cg.movieticketsystem.entity.Theater;
-import com.cg.movieticketsystem.exception.NotFoundException;
-import com.cg.movieticketsystem.util.Constants;
-import org.junit.jupiter.api.BeforeAll;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,17 +24,11 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
-import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.web.servlet.function.RequestPredicates.contentType;
+import com.cg.movieticketsystem.TestUtil;
+import com.cg.movieticketsystem.Service.admin.AdminTheaterService;
+import com.cg.movieticketsystem.entity.Theater;
+import com.cg.movieticketsystem.exception.NotFoundException;
+import com.cg.movieticketsystem.util.Constants;
 
 @SpringBootTest
 public class AdminTheaterControllerTests {
@@ -42,7 +39,7 @@ public class AdminTheaterControllerTests {
     private WebApplicationContext context;
 
     @MockBean
-    private AdminTheaterServiceImpl service;
+    private AdminTheaterService service;
 
     @BeforeEach
     void setUp() {
@@ -66,7 +63,7 @@ public class AdminTheaterControllerTests {
                 "9632146463"
         );
         when(service.addItem(any(Theater.class))).thenReturn(response);
-        mockMvc.perform(post("/api/admin/theater")
+        mockMvc.perform(post("/api/admin/theaters")
                 .content(TestUtil.asJsonString(request))
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
@@ -86,7 +83,7 @@ public class AdminTheaterControllerTests {
                 "Vikaram Pal",
                 "9632146463"
         );
-        mockMvc.perform(post("/api/admin/theater")
+        mockMvc.perform(post("/api/admin/theaters")
                 .content(TestUtil.asJsonString(request))
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isForbidden())
@@ -99,7 +96,7 @@ public class AdminTheaterControllerTests {
 
         doNothing().when(service).deleteItem(any(Long.class));
 
-        mockMvc.perform(delete("/api/admin/theater/{id}", 12L)
+        mockMvc.perform(delete("/api/admin/theaters/{id}", 12L)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
@@ -115,7 +112,7 @@ public class AdminTheaterControllerTests {
 
         doThrow(NotFoundException.class).when(service).deleteItem(any(Long.class));
 
-        mockMvc.perform(delete("/api/admin/theater/{id}", 10L)
+        mockMvc.perform(delete("/api/admin/theaters/{id}", 10L)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())

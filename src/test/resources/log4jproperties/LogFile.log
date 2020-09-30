@@ -1,0 +1,141 @@
+2020-09-17 17:01:05,013 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-17 17:01:09,243 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-17 17:02:24,625 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-17 17:02:29,035 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-17 17:03:45,130 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-17 17:03:45,131 - com.base_class.Library -INFO - Browser Launched
+2020-09-17 17:03:46,601 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-17 17:03:46,751 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-17 17:03:47,215 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-17 17:03:48,126 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-17 17:03:48,127 - com.base_class.Library -INFO - Browser is Closed
+2020-09-17 17:06:12,801 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-17 17:06:17,531 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-17 17:07:40,040 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-17 17:07:40,042 - com.base_class.Library -INFO - Browser Launched
+2020-09-17 17:07:41,457 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-17 17:07:45,596 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-17 17:07:45,994 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-17 17:07:46,768 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-17 17:07:46,769 - com.base_class.Library -INFO - Browser is Closed
+2020-09-17 17:16:43,026 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-17 17:16:47,636 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-17 17:18:26,571 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-17 17:18:26,572 - com.base_class.Library -INFO - Browser Launched
+2020-09-17 17:18:27,173 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-17 17:18:27,283 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-17 17:18:27,662 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-17 17:18:28,505 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-17 17:18:28,507 - com.base_class.Library -INFO - Browser is Closed
+2020-09-17 17:19:49,011 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-17 17:19:53,398 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-17 17:21:33,549 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-17 17:21:33,550 - com.base_class.Library -INFO - Browser Launched
+2020-09-17 17:21:34,265 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-17 17:21:34,364 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-17 17:21:40,797 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-17 17:21:41,676 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-17 17:21:41,677 - com.base_class.Library -INFO - Browser is Closed
+2020-09-29 23:39:43,467 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-29 23:42:07,190 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-29 23:43:42,260 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-29 23:44:08,477 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-29 23:46:14,887 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-29 23:46:14,888 - com.base_class.Library -INFO - Browser Launched
+2020-09-29 23:46:15,381 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-29 23:46:15,519 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-29 23:46:23,280 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-29 23:46:24,175 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-29 23:46:24,175 - com.base_class.Library -INFO - Browser is Closed
+2020-09-29 23:48:08,193 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-29 23:48:12,505 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-29 23:48:17,286 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-29 23:48:17,287 - com.base_class.Library -INFO - Browser Launched
+2020-09-29 23:48:55,399 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-29 23:49:20,216 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-29 23:49:24,169 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-29 23:49:31,248 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-29 23:49:31,248 - com.base_class.Library -INFO - Browser Launched
+2020-09-29 23:50:36,048 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-29 23:50:36,049 - com.base_class.Library -INFO - Browser Launched
+2020-09-29 23:50:36,461 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-29 23:50:36,563 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-29 23:50:42,968 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-29 23:50:43,650 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-29 23:50:43,651 - com.base_class.Library -INFO - Browser is Closed
+2020-09-30 00:31:34,154 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 00:31:39,540 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 00:35:20,951 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 00:35:20,952 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 00:38:00,718 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 00:38:04,890 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 00:40:49,150 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 00:40:49,152 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 00:40:49,559 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 00:40:49,636 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 00:40:56,024 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 00:40:56,814 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 00:40:56,814 - com.base_class.Library -INFO - Browser is Closed
+2020-09-30 00:41:38,359 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 00:41:43,299 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 00:41:59,826 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 00:41:59,827 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 00:42:00,266 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 00:42:00,364 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 00:42:06,708 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 00:42:07,458 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 00:42:07,458 - com.base_class.Library -INFO - Browser is Closed
+2020-09-30 05:19:05,207 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 09:57:51,283 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 09:57:55,647 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 09:58:01,972 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 09:58:01,972 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 09:58:02,400 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 09:58:02,496 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 09:58:08,884 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 09:58:10,062 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 09:58:10,063 - com.base_class.Library -INFO - Browser is Closed
+2020-09-30 10:02:42,988 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 10:02:47,168 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 10:02:52,935 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 10:02:52,936 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 10:02:53,461 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 10:02:53,592 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 10:02:59,969 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:03:00,800 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 10:03:00,800 - com.base_class.Library -INFO - Browser is Closed
+2020-09-30 10:12:48,319 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 10:12:52,550 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 10:12:57,417 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 10:12:57,418 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 10:12:57,894 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 10:12:58,033 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 10:13:04,420 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:31:39,903 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 10:31:44,041 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 10:31:49,605 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 10:31:49,606 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 10:31:50,104 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 10:31:50,268 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 10:31:56,670 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:33:34,673 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 10:33:39,877 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 10:33:46,062 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 10:33:46,065 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 10:33:46,618 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 10:33:46,733 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 10:33:53,155 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:33:53,340 - com.base_class.Library -INFO - clicking to add button....
+2020-09-30 10:35:40,363 - com.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 10:35:44,986 - com.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 10:35:52,257 - com.base_class.Library -INFO - Launched the FreeCRM Application
+2020-09-30 10:35:52,258 - com.base_class.Library -INFO - Browser Launched
+2020-09-30 10:35:52,685 - com.base_class.Library -INFO - Entered Username and Password
+2020-09-30 10:35:52,786 - com.base_class.Library -INFO - Login Button Clicked
+2020-09-30 10:35:59,178 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:35:59,337 - com.base_class.Library -INFO - clicking to add button....
+2020-09-30 10:36:00,034 - com.base_class.Library -INFO - filling theatre form....
+2020-09-30 10:36:00,161 - com.base_class.Library -INFO - clicking to save button....
+2020-09-30 10:36:00,600 - com.base_class.Library -INFO - Taken Screenshot Of Login Page And Title printed in console
+2020-09-30 10:36:01,330 - com.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 10:36:01,330 - com.base_class.Library -INFO - Browser is Closed

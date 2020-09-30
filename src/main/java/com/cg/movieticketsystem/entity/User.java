@@ -32,9 +32,10 @@ public class User {
     )
     private Set<Role> roles;
 
+   
     public User() {
     }
-
+    
     public User(String username, String email, String password, String contact) {
         this.username = username;
         this.email = email;
@@ -89,6 +90,10 @@ public class User {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+    
+    public void removeRole(Role role) {
+		this.roles.remove(role);
+    }	
 
     @Override
     public boolean equals(Object o) {

@@ -2,6 +2,8 @@ package com.cg.movieticketsystem.entity;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -34,11 +36,12 @@ public class Movie {
     private Set<String> languages;
 
     @DateTimeFormat(pattern="yyyy-MM-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     @Column(name = "movie_release_date", columnDefinition = "DATE")
     private LocalDate movieReleaseDate;
 
     @ManyToOne
-    @JoinColumn(name = "theater_id")
+    @JoinColumn(name = "theater_id", nullable = true)
     @NotNull(message = "Theater must not be Blank")
     private Theater theater;
 

@@ -19,6 +19,12 @@ import java.io.IOException;
 
 import static com.cg.movieticketsystem.security.SecurityConstant.*;
 
+/**
+ * AuthTokenFilter make sure that authentication process happens only once
+ * and set Authentication Object in Security Context.
+ * @author Rahhi Barbool
+ *
+ */
 public class AuthTokenFilter extends OncePerRequestFilter {
 
     private static final Logger logger = LoggerFactory.getLogger(AuthTokenFilter.class);

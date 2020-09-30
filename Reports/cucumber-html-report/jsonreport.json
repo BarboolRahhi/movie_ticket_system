@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To Test the Login Function of Free CRM",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12144000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the browser and Navigate to the Url",
+            "match": {
+              "location": "com.step_defination.MovieLoginSteps.to_launch_the_browser_and_Navigate_to_the_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 415000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To Enter Username and Password",
+            "match": {
+              "location": "com.step_defination.MovieLoginSteps.to_Enter_Username_and_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To Click the Submit button",
+            "match": {
+              "location": "com.step_defination.MovieLoginSteps.to_Click_the_Submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6391000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To Take the Screenshot and the Title",
+            "match": {
+              "location": "com.step_defination.MovieLoginSteps.to_Take_the_Screenshot_and_the_Title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T17:35:40.010Z",
+        "line": 9,
+        "name": "To Test the Theatre Function",
+        "description": "",
+        "id": "to-test-the-free-crm-application;to-test-the-theatre-function",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 157000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "To open add theatre form",
+            "match": {
+              "location": "com.step_defination.MovieTheatreSteps.to_open_add_theatre_form()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 697000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "fill theatre form",
+            "match": {
+              "location": "com.step_defination.MovieTheatreSteps.fill_theatre_form()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click Save Button",
+            "match": {
+              "location": "com.step_defination.MovieTheatreSteps.click_Save_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 439000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Take the Screenshot and the Title",
+            "match": {
+              "location": "com.step_defination.MovieTheatreSteps.take_the_Screenshot_and_the_Title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 729000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Close the browser",
+            "match": {
+              "location": "com.step_defination.MovieTheatreSteps.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Test the Free CRM Application",
+    "description": "",
+    "id": "to-test-the-free-crm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CRMTestCase.feature",
+    "tags": []
+  }
+]

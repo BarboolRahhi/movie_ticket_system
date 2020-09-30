@@ -12,6 +12,10 @@ public class LoginRequest {
 
     @NotBlank(message = "Password must not be empty")
     private String password;
+    
+    public LoginRequest() {
+		
+	}
 
     public LoginRequest(String email, String password) {
         this.email = email;
