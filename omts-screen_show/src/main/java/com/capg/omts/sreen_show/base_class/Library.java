@@ -23,8 +23,7 @@ public class Library {
 	public static WebDriver driver;
 	public static Properties properties;
 	public static Logger logger;
-
-	public Library() {
+ public Library() {
 		properties = new Properties();
 		
 		try {

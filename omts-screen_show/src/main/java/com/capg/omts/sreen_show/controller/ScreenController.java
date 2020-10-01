@@ -32,7 +32,6 @@ public class ScreenController {
 	@Autowired
 	IScreenService screenService;
 	
-
 	/***************************************************************************************************************
 	 * Accepts Screen As Input Parameter and sends it to service layer for  adding Screen into database
 	 ***************************************************************************************************************/

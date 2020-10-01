@@ -8,6 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.capg.omts.sreen_show.service.ScreenServiceImpl;
 
 @SpringBootApplication
+
+
+
+
 public class OmtsScreenShowApplication {
 
 	public static void main(String[] args) {

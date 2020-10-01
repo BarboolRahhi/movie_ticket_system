@@ -25,6 +25,7 @@ import com.capg.omts.sreen_show.service.IShowService;
  * @version :1.0
  * @since :2020-09-19
  **/
+
 @RestController
 @RequestMapping("/show")
 @CrossOrigin(origins= {"http://localhost:4200"})
