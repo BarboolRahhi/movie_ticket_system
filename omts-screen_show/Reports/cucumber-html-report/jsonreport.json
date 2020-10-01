@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-30T19:32:14.052Z",
+        "line": 5,
+        "name": "To Test the Screen Functionality of ScreenShow",
+        "description": "",
+        "id": "to-test-the-screenshow-application;to-test-the-screen-functionality-of-screenshow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17181000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open  OnlineMovieTicketSystem",
+            "match": {
+              "location": "com.capg.omts.sreen_show.step_defination.ScreenShowSteps.open_OnlineMovieTicketSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 772000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Goto Screen And Click On Add Screen",
+            "match": {
+              "location": "com.capg.omts.sreen_show.step_defination.ScreenShowSteps.goto_Screen_And_Click_On_Add_Screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 842000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter ScreenDetails",
+            "match": {
+              "location": "com.capg.omts.sreen_show.step_defination.ScreenShowSteps.enter_ScreenDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click AddScreen Button",
+            "match": {
+              "location": "com.capg.omts.sreen_show.step_defination.ScreenShowSteps.click_AddScreen_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 529000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Take the Screenshot and the Title",
+            "match": {
+              "location": "com.capg.omts.sreen_show.step_defination.ScreenShowSteps.take_the_Screenshot_and_the_Title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Test the ScreenShow Application",
+    "description": "",
+    "id": "to-test-the-screenshow-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ScreenShow.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,13 @@
+browser = chrome
+url = http://localhost:4200/
+
+#Add Screen Details
+
+screenId=60001
+screenName= Bhujanga
+rows=10
+columns=10
+showId=70001
+showName= First Show
+showStartTime=2020-10-01T18:00:00
+showEndTime= 2020-10-01T21:00:00

@@ -1,0 +1,49 @@
+2020-09-30 15:08:26,084 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 15:08:50,115 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 15:08:59,550 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 15:08:59,551 - com.capg.omts.sreen_show.base_class.Library -INFO - Browser Launched
+2020-09-30 15:42:47,955 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 15:42:55,787 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 15:42:59,526 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 15:42:59,527 - com.capg.omts.sreen_show.base_class.Library -INFO - Browser Launched
+2020-09-30 15:42:59,809 - com.capg.omts.sreen_show.base_class.Library -INFO - Browser Login successfully
+2020-09-30 15:43:01,393 - com.capg.omts.sreen_show.base_class.Library -INFO - Exiting the application and closing the browser
+2020-09-30 15:43:01,395 - com.capg.omts.sreen_show.base_class.Library -INFO - Closing Browser
+2020-09-30 16:25:03,798 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 16:25:11,553 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 16:25:15,778 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 22:55:16,028 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 22:55:23,726 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 22:55:28,389 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 22:55:28,390 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-09-30 22:55:32,079 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-09-30 23:04:19,019 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 23:04:25,511 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 23:04:29,352 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 23:04:29,353 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-09-30 23:04:30,128 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-09-30 23:13:52,134 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 23:14:07,194 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 23:14:11,859 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 23:14:11,862 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-09-30 23:14:13,155 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-09-30 23:33:29,530 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-09-30 23:33:37,548 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-09-30 23:33:41,769 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-09-30 23:33:41,772 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-09-30 23:33:44,662 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-10-01 00:06:13,405 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-10-01 00:06:23,097 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-10-01 00:06:26,633 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-10-01 00:06:26,634 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-10-01 00:06:27,513 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-10-01 00:13:53,169 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-10-01 00:14:07,674 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-10-01 00:14:11,413 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-10-01 00:14:11,416 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-10-01 00:14:12,420 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
+2020-10-01 01:02:14,470 - com.capg.omts.sreen_show.base_class.Library -INFO - Starting with Browser Set Up
+2020-10-01 01:02:27,876 - com.capg.omts.sreen_show.base_class.Library -INFO - Identified the browser as chrome. Launching the browser
+2020-10-01 01:02:31,367 - com.capg.omts.sreen_show.base_class.Library -INFO - Launched the OrangeHRM Application
+2020-10-01 01:02:31,368 - com.capg.omts.sreen_show.base_class.Library -INFO - OnlineMovieTicketSystem is Launched
+2020-10-01 01:02:32,148 - com.capg.omts.sreen_show.base_class.Library -INFO - Opened Screen Page 
